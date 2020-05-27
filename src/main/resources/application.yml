@@ -1,0 +1,19 @@
+server:
+    port: 80
+    servlet:
+        context-path: /wpe
+
+spring:
+    freemarker:
+        enabled: true #是否启用thymeleaf作为视图解析
+        cache: false # 缓存配置 开发阶段应该配置为false 因为经常会改
+        charset: UTF-8 # 文件编码
+        #前缀，也就是模板存放的路径
+        prefix: classpath:/templates/
+        suffix: .html # 模版后缀名 默认为ftl
+        #编码格式
+        encoding: UTF-8
+        #设置不严格的html
+        mode: HTML
+        servlet:
+            content-type: text/html
